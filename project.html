@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop</title>
+    <style>
+        body{
+           background: url(background.jpg);
+           background-size: cover;
+        }
+        h1{
+            text-align: center;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        th img{
+            width: 240px;
+            height: 150px;
+        }
+        table{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
+            
+        }
+        img:hover{
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+        ul li{
+            border: 1px solid black;
+            display: inline-block;
+            margin-left: 20%;
+            margin-right: 10%;
+            
+        }
+        .current{
+            padding: 14px 40px;
+            border-radius: 24px;
+            background: skyblue;
+        }
+        .next{
+            display: inline;
+            padding: 14px 40px;
+            border-radius: 24px;
+            background: lightgreen;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        @media screen and (max-width: 500px) {
+        .navbar a {
+            float: none;
+            display: block;
+            }
+        }
+    </style>
+    <script src="jquery.min"></script>
+    <script>
+     $(document).ready(function(){
+            $("img").click(function(){
+               alert("You Must login to purchase products");
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <h1>Gift Shop</h1>
+    <div class="navbar">
+        <a class="active" href="project.html"> Home</a> 
+        <a  href="login-form.html"> Login</a> 
+        <a href="sign-up.html"> Sign Up</a> 
+       
+      </div>
+    <table>
+        <tr>
+            <th>
+                <a href="#"><img src="flower-1.jpg" alt=""></a>
+                <p><a href="#">Flower one</a></p>
+            </th>
+            <th>
+               <a href="#"> <img src="flower-1.jpg" alt=""> </a>
+                <p><a href="#">Flower Two</a></p>
+            </th>
+            <th>
+                <a href="#"><img src="flower-2.jfif" alt=""></a>
+                <p><a href="#">Flower Three</a></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <a href="#"><img src="flower-2.jfif" alt=""></a>
+                <p><a href="#">Flower Four</a></p>
+            </th>
+            <th>
+                <a href="#"><img src="flower-3.jfif" alt=""></a>
+                <p><a href="#">Flower Five</a></p>
+            </th>
+            <th>
+                <a href="#"><img src="flower-3.jfif" alt=""></a>
+                <p><a href="#">Flower Six</a></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+               <a href="#"> <img src="flower-4.jpg" alt=""></a>
+                <p><a href="#">Flower Seven</a></p>
+            </th>
+            <th>
+                <a href="#"><img src="flower-4.jpg" alt=""></a>
+                <p><a href="#">Flower Eight</a></p>
+            </th>
+            <th>
+                <a href="#"><img src="flower-4.jpg" alt=""></a>
+                <p><a href="#">Flower Nine</a></p>
+            </th>
+        </tr>
+    </table>
+    <ul>
+        <li class="current"><a href="project.html">Current Page</a></li>
+        <li class="next"><a href="project.html">Next Page</a></li>
+    </ul>
+</body>
+</html>
